@@ -109,8 +109,11 @@ div {
 }
 
 div > iframe {
-    width: 100%;
+    width: 90%;
     padding: 10px 20px 10px 20px;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    overflow: hidden;
     margin: 0px;
     background-color: #1a4729;
 }
