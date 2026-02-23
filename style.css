@@ -51,13 +51,20 @@ nav > a {
 }
 
 main {
-    width: 70%;
-    margin-right: 15%;
-    margin-left: 15%;
+    display: grid;
+    grid-template-columns: 1fr 65% 1fr;
+}
+
+section {
+    grid-column: 2;
     background-color: white;
 }
 
-main > h1 {
+section img {
+    width: 90%;
+}
+
+main > section > h1 {
     font-family: 'idroid';
     color: #1a4729;
     font-size: 1.5em;
@@ -65,14 +72,14 @@ main > h1 {
     padding: 10px 0px 10px 15px;
 }
 
-main > p {
+main > section > p {
     text-align: justify;
     text-indent: 2em;
     padding: 0px 15px 0px 15px;
     margin: 0px;
 }
 
-main > h2 {
+main > section > h2 {
     font-family: 'idroid';
     color: #1a4729;
     font-size: 1.3em;
@@ -108,12 +115,9 @@ div {
 
 }
 
-div > iframe {
+div  iframe {
     width: 90%;
     padding: 10px 20px 10px 20px;
-    aspect-ratio: 16/9;
-    object-fit: cover;
-    overflow: hidden;
     margin: 0px;
     background-color: #1a4729;
 }
@@ -148,6 +152,10 @@ div > ul {
     border-radius: 0px 0px 10px 10px;
 }
 
+#bugdroid {
+    width: 50%;
+}
+
 footer {
     color: white;
     background-color: #1a4729;
@@ -156,9 +164,13 @@ footer {
     text-align: center;
 }
 
-footer > p{
+footer > p {
     margin: 10px 0px 0px 0px;
     padding: 5px;
+}
+
+footer > p > strong {
+    color: white;
 }
 
 a:hover {
@@ -174,7 +186,7 @@ nav > a:hover {
     border-radius: 2px;
     text-decoration: none;
 }
-a:active{
+a:active {
     color: yellow;
     text-decoration: underline;
 }
